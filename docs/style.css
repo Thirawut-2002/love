@@ -48,15 +48,6 @@ body[data-page="landing"] {
   text-align: center;
 }
 
-.eyebrow {
-  margin: 0 0 20px;
-  color: var(--rose);
-  font-size: 1.2rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
 .qr-box {
   margin: 0 auto;
   width: 240px;
@@ -128,6 +119,18 @@ body[data-page="landing"] {
   background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,233,245,0.7) 25%, rgba(255,202,229,0.9) 100%);
 }
 
+.title-text {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--deep);
+  text-shadow: 0 8px 20px rgba(255, 136, 188, 0.4);
+  z-index: 20;
+}
+
 .big-heart-container {
   position: absolute;
   top: 50%;
@@ -189,7 +192,7 @@ body[data-page="landing"] {
 
 .love-text {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(2.5rem, 8vw, 5rem);
@@ -270,5 +273,6 @@ body[data-page="landing"] {
   .card { padding: 28px 18px 20px; }
   .qr-box { width: 190px; height: 190px; }
   .big-heart { font-size: 3rem; }
-  .love-text { font-size: clamp(1.8rem, 6vw, 3.5rem); }
+  .title-text { top: 15%; }
+  .love-text { top: 60%; }
 }
